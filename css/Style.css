@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp');
+
+*{
+  /*font-family: 'Dosis', sans-serif;*/
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#header,#about,#skills,#resume,#contacts{
+  height:100vh;
+  color: white;
+  text-align: center;
+}
+#about,#skills,#contacts,#works{
+  padding-top:5vh;
+  color: black;
+}
+#resume,#works{
+  padding-top: 5vh;
+}
+#welcome{
+  padding-top: 35vh;
+}
+#resume_text{
+  padding-top: 30vh;
+}
+
+#links_group a{
+	text-decoration: none;
+	color: black;
+}
+p,a{
+  font-size: 4vh;
+}
+#send_button{
+  width: 100%;
+}
+#text_about_me{
+  padding-top: 20vh;
+}
+.progress{
+  height: 6vh;
+  margin: 3vh;
+  font-size: 5vh;
+}
+.progress-bar{
+  text-align: left;
+  padding-left: 1vw;
+}
+
+.work_block
+{
+  height: 50vh;
+  text-align: center;
+}
+.work_img{
+  width: 50%;
+  max-height: width;
+}
+
+
+#ScrollButton a {
+  padding-top: 60px;
+}
+#ScrollButton a span {
+  position: absolute;
+  bottom:30vh;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@media screen and (orientation: portrait) { 
+  p{
+    font-size: 5vw;
+  }
+     }
+@media screen and (orientation:landscape) and (max-width:830px){
+  .work_block{
+  margin-bottom: 35vw;
+   }
+}
